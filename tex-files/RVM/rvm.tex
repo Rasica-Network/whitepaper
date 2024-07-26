@@ -1,0 +1,15 @@
+Smart contracts written for the SVM will be compatible with the RVM, meaning that no previously invested resources in developing Ethereum smart contracts will be wasted.  \\
+
+Precompiles are utilised in order to extend the functionality of the SVM. Precompiles or precompiled contracts are smart contracts that allow easy access to functions when writing smart contracts. These can be mapped to free slots in the namespace for the Opcodes. While these precompiles are not required to give Ethereum its pseudo-Turing completeness they enable users to produce smart contracts with a much higher level of business logic, meaning smart contracts are easier to create. \\
+
+The RVM extends the range of Opcodes that are available on the SVM through the use of precompiles. These precompiles will allow interoperability with the Rasica DFS, as some of the mathematical functions needed for confidential transactions. Precompiles are smart contracts that perform a function that are given input in\\
+
+Examples of the additional pre-compiles that are added are: \\
+
+\begin{itemize} 
+\item Range proof - Allows a range proof to be built 
+\item Read DFS - Reads a part of the DFS according to its CID.
+\item Write DFS - Writes a file to the DFS, giving it a CID. \\
+\end{itemize} 
+
+The use of precompiles rather than the addition of new opcodes means that RVM can retain interoperability with the SVM in the future while further extending its usability. Through the use of opcodes it also allows Rasica to implement its specific cryptographic primatives that are used on the network as these will be different from those used on Ethereum. It also allows Rasica to allow confidential transactions within smart contracts to be broadcast trivially. Interaction with the DFS integrated into Rasica is also possible. 
